@@ -26,6 +26,7 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
             Random random = new Random();
             String sendInfo = String.valueOf(random.nextInt(100));
             ctx.writeAndFlush(Unpooled.copiedBuffer(sendInfo, CharsetUtil.UTF_8));
+            Thread.sleep(1000);
         }
     }
 

@@ -45,7 +45,7 @@ public class EchoServer {
     }
 
     public static void main(String[] args) {
-        EchoServer server = new EchoServer(6788);
+        EchoServer server = new EchoServer(8888);
         try {
             server.start();
         } catch (InterruptedException e) {
